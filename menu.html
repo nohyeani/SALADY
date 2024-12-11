@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/menu.js"></script>
 </head>
 
 <body>
@@ -37,19 +43,693 @@
     <div id="container">
         <section class="con1">
             <h2>샐러디</h2>
-            <ul>
-                <li></li>
+            <div class="salady">
+                <ul class="s_box1 active">
+                    <li>
+                        <p>탄단지 샐러드</p>
+                        <img src="img/menu/salady1.png" alt="탄단지샐러드">
+                    </li>
+                    <li>
+                        <ul class="info">
+                            <li>
+                                <p class="cogreen">베이스</p>
+                                <p class="cogray">채소</p>
+                            </li>
+                            <li>
+                                <p class="cogreen">토핑</p>
+                                <p class="cogray">치킨,크랜베리,스윗포테이토,견과류</p>
+                            </li>
+                            <li>
+                                <p class="cogreen">기본 드레싱</p>
+                                <p class="cogray">오리엔탈</p>
+                            </li>
+                        </ul>
+                        <div class="info2">
+                            <div class="grain">
+                                <div class="grainbox">
+                                    <img src="img/menu/grain.png" alt="곡물구성">
+                                    <p>곡물구성</p>
+                                </div>
+                            </div>
+                            <div class="vege">
+                                <div class="vegebox">
+                                    <img src="img/menu/vege.png" alt="채소구성">
+                                    <p>채소구성</p>
+                                </div>
+                                <ul class="veges">
+                                    <li>
+                                        <img src="img/menu/romaine.jpg" alt="로메인">
+                                        <p class="smallfont">로메인</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/frill.jpeg" alt="프릴아이스">
+                                        <p class="smallfont">프릴아이스</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/caipira.png" alt="카이피라">
+                                        <p class="smallfont">카이피라</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/radicchio.jpg" alt="라디치오">
+                                        <p class="smallfont">라디치오</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="s_box2">
+                    <li>
+                        <p>로스트닭다리살 샐러디</p>
+                        <img src="img/menu/salady2.png" alt="로스트닭다리살 샐러디">
+                    </li>
+                    <li>
+                        <ul class="info">
+                            <li>
+                                <p class="cogreen">베이스</p>
+                                <p class="cogray">채소</p>
+                            </li>
+                            <li>
+                                <p class="cogreen">토핑</p>
+                                <p class="cogray">
+                                    닭다리살, 단호박, 토마토, 양파, 옥수수, 할라피뇨,양파플레이크</p>
+                            </li>
+                            <li>
+                                <p class="cogreen">기본 드레싱</p>
+                                <p class="cogray">크리미할라피뇨</p>
+                            </li>
+                        </ul>
+                        <div class="info2">
+                            <div class="grain">
+                                <div class="grainbox">
+                                    <img src="img/menu/grain.png" alt="곡물구성">
+                                    <p>곡물구성</p>
+                                </div>
+                            </div>
+                            <div class="vege">
+                                <div class="vegebox">
+                                    <img src="img/menu/vege.png" alt="채소구성">
+                                    <p>채소구성</p>
+                                </div>
+                                <ul class="veges">
+                                    <li>
+                                        <img src="img/menu/romaine.jpg" alt="로메인">
+                                        <p class="smallfont">로메인</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/frill.jpeg" alt="프릴아이스">
+                                        <p class="smallfont">프릴아이스</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/caipira.png" alt="카이피라">
+                                        <p class="smallfont">카이피라</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/radicchio.jpg" alt="라디치오">
+                                        <p class="smallfont">라디치오</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="s_box3">
+                    <li>
+                        <p>콥 샐러디</p>
+                        <img src="img/menu/salady3.png" alt="콥 샐러디">
+                    </li>
+                    <li>
+                        <ul class="info">
+                            <li>
+                                <p class="cogreen">베이스</p>
+                                <p class="cogray">채소</p>
+                            </li>
+                            <li>
+                                <p class="cogreen">토핑</p>
+                                <p class="cogray">
+                                    닭가슴살, 계란, 옥수수, 올리브, 양파, 베이컨</p>
+                            </li>
+                            <li>
+                                <p class="cogreen">기본 드레싱</p>
+                                <p class="cogray">시저</p>
+                            </li>
+                        </ul>
+                        <div class="info2">
+                            <div class="grain">
+                                <div class="grainbox">
+                                    <img src="img/menu/grain.png" alt="곡물구성">
+                                    <p>곡물구성</p>
+                                </div>
+                            </div>
+                            <div class="vege">
+                                <div class="vegebox">
+                                    <img src="img/menu/vege.png" alt="채소구성">
+                                    <p>채소구성</p>
+                                </div>
+                                <ul class="veges">
+                                    <li>
+                                        <img src="img/menu/romaine.jpg" alt="로메인">
+                                        <p class="smallfont">로메인</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/frill.jpeg" alt="프릴아이스">
+                                        <p class="smallfont">프릴아이스</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/caipira.png" alt="카이피라">
+                                        <p class="smallfont">카이피라</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/radicchio.jpg" alt="라디치오">
+                                        <p class="smallfont">라디치오</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="s_small_box">
+                <li class="on">
+                    <h3>탄단지 샐러디</h3>
+                    <p>부드러운 국내산 닭가슴살, 고구마 무스,견과류, 크랜베리가 들어간 탄·단·지가 골고루 들어있는 샐러디 베스트 메뉴</p>
+                    <img src="img/menu/salady1.png" alt="탄단지샐러드">
+                </li>
+                <li>
+                    <h3>로스트닭다리살 샐러디</h3>
+                    <p>촉촉하고 쫄깃한 닭다리살과 단호박 무스, 할라피뇨, 옥수수 등 다양한 토핑이 어우러진 샐러디 베스트 메뉴 (추천 드레싱:크리미할라피뇨)</p>
+                    <img src="img/menu/salady2.png" alt="로스트닭다리살 샐러드">
+                </li>
+                <li>
+                    <h3>콥 샐러디</h3>
+                    <p>부드러운 국내산 닭가슴살, 삶은 계란, 베이컨, 옥수수, 양파 등 다채로운 토핑을 사용한 샐러디만의 콥 샐러드</p>
+                    <img src="img/menu/salady3.png" alt="콥 샐러드">
+                </li>
             </ul>
         </section>
         <section class="con2">
+            <h2>웜볼</h2>
+            <div class="warm">
+                <div class="left">
+                    <ul class="w_box1 active">
+                        <li>
+                            <p>칠리베이컨 웜볼</p>
+                            <img src="img/menu/warm1.png" alt="칠리베이컨 웜볼">
+                        </li>
+                        <li>
+                            <ul class="info">
+                                <li>
+                                    <p class="cogreen">베이스</p>
+                                    <p class="cogray">채소, 곡물</p>
+                                </li>
+                                <li>
+                                    <p class="cogreen">토핑</p>
+                                    <p class="cogray">
+                                        베이컨, 에그, 옥수수, 양파플레이크</p>
+                                </li>
+                                <li>
+                                    <p class="cogreen">기본 드레싱</p>
+                                    <p class="cogray">크리미칠리 드레싱</p>
+                                </li>
+                            </ul>
+                            <div class="info2">
+                                <div class="grain">
+                                    <div class="grainbox">
+                                        <img src="img/menu/grain.png" alt="곡물구성">
+                                        <p>곡물구성</p>
+                                    </div>
+                                    <ul class="grains">
+                                        <li>
+                                            <img src="img/menu/oats.jpg" alt="귀리">
+                                            <p class="smallfont">
+                                                귀리
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/rice.jpg" alt="귀리">
+                                            <p class="smallfont">
+                                                찹쌀
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/barley.jpg" alt="귀리">
+                                            <p class="smallfont">
+                                                찰보리
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="vege">
+                                    <div class="vegebox">
+                                        <img src="img/menu/vege.png" alt="채소구성">
+                                        <p>채소구성</p>
+                                    </div>
+                                    <ul class="veges">
+                                        <li>
+                                            <img src="img/menu/romaine.jpg" alt="로메인">
+                                            <p class="smallfont">로메인</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/frill.jpeg" alt="프릴아이스">
+                                            <p class="smallfont">프릴아이스</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/caipira.png" alt="카이피라">
+                                            <p class="smallfont">카이피라</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/radicchio.jpg" alt="라디치오">
+                                            <p class="smallfont">라디치오</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="w_box2">
+                        <li>
+                            <p>우삼겹 웜볼</p>
+                            <img src="img/menu/warm2.png" alt="우삽겹 웜볼">
+                        </li>
+                        <li>
+                            <ul class="info">
+                                <li>
+                                    <p class="cogreen">베이스</p>
+                                    <p class="cogray">채소, 곡물</p>
+                                </li>
+                                <li>
+                                    <p class="cogreen">토핑</p>
+                                    <p class="cogray">
+                                        우삼겹, 양파, 견과류</p>
+                                </li>
+                                <li>
+                                    <p class="cogreen">기본 드레싱</p>
+                                    <p class="cogray">오리엔탈</p>
+                                </li>
+                            </ul>
+                            <div class="info2">
+                                <div class="grain">
+                                    <div class="grainbox">
+                                        <img src="img/menu/grain.png" alt="곡물구성">
+                                        <p>곡물구성</p>
+                                    </div>
+                                    <ul class="grains">
+                                        <li>
+                                            <img src="img/menu/oats.jpg" alt="귀리">
+                                            <p class="smallfont">
+                                                귀리
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/rice.jpg" alt="귀리">
+                                            <p class="smallfont">
+                                                찹쌀
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/barley.jpg" alt="귀리">
+                                            <p class="smallfont">
+                                                찰보리
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="vege">
+                                    <div class="vegebox">
+                                        <img src="img/menu/vege.png" alt="채소구성">
+                                        <p>채소구성</p>
+                                    </div>
+                                    <ul class="veges">
+                                        <li>
+                                            <img src="img/menu/romaine.jpg" alt="로메인">
+                                            <p class="smallfont">로메인</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/frill.jpeg" alt="프릴아이스">
+                                            <p class="smallfont">프릴아이스</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/caipira.png" alt="카이피라">
+                                            <p class="smallfont">카이피라</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/radicchio.jpg" alt="라디치오">
+                                            <p class="smallfont">라디치오</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="w_box3">
+                        <li>
+                            <p>바베큐닭다리살 웜볼</p>
+                            <img src="img/menu/warm1.png" alt="바베큐닭다리살 웜볼">
+                        </li>
+                        <li>
+                            <ul class="info">
+                                <li>
+                                    <p class="cogreen">베이스</p>
+                                    <p class="cogray">채소, 곡물</p>
+                                </li>
+                                <li>
+                                    <p class="cogreen">토핑</p>
+                                    <p class="cogray">
+                                        로스트닭다리살,에그,양파,옥수수,바베큐소스
 
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="cogreen">기본 드레싱</p>
+                                    <p class="cogray">타바스코오리엔탈</p>
+                                </li>
+                            </ul>
+                            <div class="info2">
+                                <div class="grain">
+                                    <div class="grainbox">
+                                        <img src="img/menu/grain.png" alt="곡물구성">
+                                        <p>곡물구성</p>
+                                    </div>
+                                    <ul class="grains">
+                                        <li>
+                                            <img src="img/menu/oats.jpg" alt="귀리">
+                                            <p class="smallfont">
+                                                귀리
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/rice.jpg" alt="귀리">
+                                            <p class="smallfont">
+                                                찹쌀
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/barley.jpg" alt="귀리">
+                                            <p class="smallfont">
+                                                찰보리
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="vege">
+                                    <div class="vegebox">
+                                        <img src="img/menu/vege.png" alt="채소구성">
+                                        <p>채소구성</p>
+                                    </div>
+                                    <ul class="veges">
+                                        <li>
+                                            <img src="img/menu/romaine.jpg" alt="로메인">
+                                            <p class="smallfont">로메인</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/frill.jpeg" alt="프릴아이스">
+                                            <p class="smallfont">프릴아이스</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/caipira.png" alt="카이피라">
+                                            <p class="smallfont">카이피라</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/menu/radicchio.jpg" alt="라디치오">
+                                            <p class="smallfont">라디치오</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="w_small_box">
+                    <li class="on">
+                        <h3>칠리베이컨 웜볼</h3>
+                        <p>매콤달콤한 크리미칠리와 토핑들의 조합이 매력적인 샐러디 No.1 베스트 메뉴</p>
+                        <img src="img/menu/warm1.png" alt="칠리베이컨 웜볼">
+                    </li>
+                    <li>
+                        <h3>우삼겹 웜볼</h3>
+                        <p>감칠맛 있는 간장소스로 양념 된 우삼겹과 고소한 견과류의 식감이 더해진 든든한 메뉴</p>
+                        <img src="img/menu/warm2.png" alt="우삼겹 웜볼">
+                    </li>
+                    <li>
+                        <h3>바베큐닭다리살 웜볼</h3>
+                        <p>촉촉하고 쫄깃한 닭다리살과 매콤달콤한 바베큐소스,옥수수 등토핑들이 조화를 이뤄 매력적인 치밥 스타일의 메뉴</p>
+                        <img src="img/menu/warm3.png" alt="바베큐닭다리살 웜볼">
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="con3">
-
+            <h2>프로틴박스</h2>
+            <ul class="probox">
+                <!-- <li>
+                    <div class="arrow_l"><i class="fa-solid fa-left-long"></i></div>
+                    <div class="arrow_r">
+                        <i class="fa-solid fa-right-long"></i>
+                    </div>
+                </li> -->
+                <li>
+                    <h3>더블 닭다리살박스</h3>
+                    <div class="con3_info">
+                        <span class="cogreen">베이스</span><span>곡물</span>
+                    </div>
+                    <div class="con3_info">
+                        <span class="cogreen">토핑</span><span>
+                            로스트닭다리살, 단호박, 당근라페, 채소믹스, 옥수수, 할라피뇨, 나쵸칩, 바베큐소스, 파슬리, 곡물밥</span>
+                    </div>
+                    <div class="con3_info">
+                        <span class="cogreen">기본 드레싱</span><span>기본 제공 드레싱 없음</span>
+                    </div>
+                    <p>풍성하게 올라간 촉촉하고 쫄깃한 닭다리살과 매콤달콤한 바베큐소스가 조화로운 도시락 스타일의 든든한 한 끼 식사 (*개별 드레싱 미제공)</p>
+                    <img src="img/menu/protein1.png" alt="더블 닭다리살 박스">
+                </li>
+                <li>
+                    <h3>더블 치킨박스</h3>
+                    <div class="con3_info">
+                        <span class="cogreen">베이스</span><span>곡물</span>
+                    </div>
+                    <div class="con3_info">
+                        <span class="cogreen">토핑</span><span>
+                            닭가슴살, 단호박, 당근라페, 채소믹스, 옥수수, 할라피뇨, 나쵸칩, 바질페스토, 시저, 파슬리, 곡물밥</span>
+                    </div>
+                    <div class="con3_info">
+                        <span class="cogreen">기본 드레싱</span><span>기본 제공 드레싱 없음</span>
+                    </div>
+                    <p>풍성하게 올라간 부드러운 닭가슴살과 향긋한 바질페스토, 시저 드레싱이 만나 조화로운 도시락 스타일의 든든한 한 끼 식사 (*개별 드레싱 미제공)</p>
+                    <img src="img/menu/protein2.png" alt="더블 치킨 박스">
+                </li>
+                <li>
+                    <h3>더블 우삼겹 박스</h3>
+                    <div class="con3_info">
+                        <span class="cogreen">베이스</span><span>곡물</span>
+                    </div>
+                    <div class="con3_info">
+                        <span class="cogreen">토핑</span><span>
+                            우삼겹, 단호박, 당근라페, 채소믹스, 옥수수, 할라피뇨, 나쵸칩, 양파플레이크, 파슬리, 곡물밥</span>
+                    </div>
+                    <div class="con3_info">
+                        <span class="cogreen">기본 드레싱</span><span>기본제공 드레싱 없음</span>
+                    </div>
+                    <p>감칠맛 있는 간장소스로 양념 된 우삼겹이 듬뿍 올라간 도시락 스타일의 든든한 한 끼 식사 (*개별 드레싱 미제공)</p>
+                    <img src="img/menu/protein3.png" alt="더블 우삼겹 박스">
+                </li>
+            </ul>
         </section>
         <section class="con4">
-
+            <h2>샌드</h2>
+            <div class="sand">
+                <div class="next"><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="prev"><i class="fa-solid fa-chevron-left"></i></div>
+                <ul class="sandbox1">
+                    <li>
+                        <div class="graybox">
+                            <p class="cogreen">베이스</p>
+                            <p class="cogray">채소</p>
+                        </div>
+                        <div class="graybox">
+                            <p class="cogreen">토핑</p>
+                            <p class="cogray">
+                                참치믹스, 양파, 토마토, 오이, 에그, 옥수수(*메인토핑 및 서브토핑 추가 불가)</p>
+                        </div>
+                        <div class="graybox">
+                            <p class="cogreen">기본 드레싱</p>
+                            <p class="cogray">허니머스타드</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="yellowbox">
+                            <h3>동원참치마요 샌드</h3>
+                            <img src="img/menu/sand1.png" alt="동원참치마요샌드">
+                        </div>
+                        <div class="info2">
+                            <div class="grain">
+                                <div class="grainbox">
+                                    <img src="img/menu/grain.png" alt="곡물구성">
+                                    <p>곡물구성</p>
+                                </div>
+                            </div>
+                            <div class="vege">
+                                <div class="vegebox">
+                                    <img src="img/menu/vege.png" alt="채소구성">
+                                    <p>채소구성</p>
+                                </div>
+                                <ul class="veges">
+                                    <li>
+                                        <img src="img/menu/romaine.jpg" alt="로메인">
+                                        <p class="smallfont">로메인</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/frill.jpeg" alt="프릴아이스">
+                                        <p class="smallfont">프릴아이스</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/caipira.png" alt="카이피라">
+                                        <p class="smallfont">카이피라</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/radicchio.jpg" alt="라디치오">
+                                        <p class="smallfont">라디치오</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="sandbox2">
+                    <li>
+                        <div class="graybox">
+                            <p class="cogreen">베이스</p>
+                            <p class="cogray"></p>
+                        </div>
+                        <div class="graybox">
+                            <p class="cogreen">토핑</p>
+                            <p class="cogray">
+                                에그마요, 옥수수, 체다치즈, 귀리번</p>
+                        </div>
+                        <div class="graybox">
+                            <p class="cogreen">기본 드레싱</p>
+                            <p class="cogray"> 크리미할라피뇨</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="yellowbox">
+                            <h3>에그마요 샌드</h3>
+                            <img src="img/menu/sand2.png" alt="에그마요샌드">
+                        </div>
+                        <div class="info2">
+                            <div class="grain">
+                                <div class="grainbox">
+                                    <img src="img/menu/grain.png" alt="곡물구성">
+                                    <p>곡물구성</p>
+                                </div>
+                            </div>
+                            <div class="vege">
+                                <div class="vegebox">
+                                    <img src="img/menu/vege.png" alt="채소구성">
+                                    <p>채소구성</p>
+                                </div>
+                                <ul class="veges">
+                                    <li>
+                                        <img src="img/menu/romaine.jpg" alt="로메인">
+                                        <p class="smallfont">로메인</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/frill.jpeg" alt="프릴아이스">
+                                        <p class="smallfont">프릴아이스</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/caipira.png" alt="카이피라">
+                                        <p class="smallfont">카이피라</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/radicchio.jpg" alt="라디치오">
+                                        <p class="smallfont">라디치오</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="sandbox3">
+                    <li>
+                        <div class="graybox">
+                            <p class="cogreen">베이스</p>
+                            <p class="cogray">채소</p>
+                        </div>
+                        <div class="graybox">
+                            <p class="cogreen">토핑</p>
+                            <p class="cogray"> 치킨,토마토,크랜베리,체다치즈,크림치즈 (*메인토핑 및 서브토핑 추가 불가)</p>
+                        </div>
+                        <div class="graybox">
+                            <p class="cogreen">기본 드레싱</p>
+                            <p class="cogray"> 시저</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="yellowbox">
+                            <h3>치킨토마토 샌드</h3>
+                            <img src="img/menu/sand3.png" alt="치킨토마토 샌드">
+                        </div>
+                        <div class="info2">
+                            <div class="grain">
+                                <div class="grainbox">
+                                    <img src="img/menu/grain.png" alt="곡물구성">
+                                    <p>곡물구성</p>
+                                </div>
+                            </div>
+                            <div class="vege">
+                                <div class="vegebox">
+                                    <img src="img/menu/vege.png" alt="채소구성">
+                                    <p>채소구성</p>
+                                </div>
+                                <ul class="veges">
+                                    <li>
+                                        <img src="img/menu/romaine.jpg" alt="로메인">
+                                        <p class="smallfont">로메인</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/frill.jpeg" alt="프릴아이스">
+                                        <p class="smallfont">프릴아이스</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/caipira.png" alt="카이피라">
+                                        <p class="smallfont">카이피라</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/menu/radicchio.jpg" alt="라디치오">
+                                        <p class="smallfont">라디치오</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
+    </div>
+    <footer>
+        <ul>
+            <li>
+                <a href="#">개인정보처리방침</a>
+            </li>
+            <li>
+                |
+            </li>
+            <li>
+                <a href="#">서비스이용약관</a>
+            </li>
+        </ul>
+        <div>회사명 : ㈜샐러디사업자등록번호 : 681-86-00031 COPYRIGHT(C) 2022 ㈜샐러디. CO.LTD ALL RIGHT RESERVED.</div>
+    </footer>
+    <div class="wrap">
+        <i class="fa-solid fa-xmark close"></i>
+        <ul class="sub_menu">
+            <li><a href="#">SALADY</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">브랜드</a></li>
+            <li><a href="#">APP</a></li>
+            <li><a href="#">매장</a></li>
+            <li><a href="#">새소식</a></li>
+        </ul>
     </div>
 </body>
 
