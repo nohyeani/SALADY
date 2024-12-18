@@ -230,16 +230,45 @@ body {
         border-top-left-radius: 300px;
         border-top-right-radius: 300px;
         box-shadow: 5px 5px 5px #222;
-
     }
 
     .con2 .best img {
         width: 100%;
         height: 100%;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    .con2 .best li:nth-child(1) img {
+        transition: 1s;
+    }
+
+    .con2 .best li:nth-child(2) img {
+        transition: 1.8s;
+    }
+
+    .con2 .best li:nth-child(3) img {
+        transition: 2s;
     }
 
     .con2 p {
+        opacity: 0;
         margin-bottom: 20px;
+        transform: translateX(-200px);
+
+    }
+
+
+    .con2 .best li:nth-child(1) p {
+        transition: 1s;
+    }
+
+    .con2 .best li:nth-child(2) p {
+        transition: 1.8s;
+    }
+
+    .con2 .best li:nth-child(3) p {
+        transition: 2s;
     }
 
     .con2 .arrow {
@@ -284,11 +313,17 @@ body {
         display: inline-block;
         border: 5px solid var(--main-color1);
         border-radius: 100px;
-
+        transform: translateY(-200px) rotate(180deg);
+        opacity: 0;
+        transition: 1s;
     }
 
     .flower {
         width: 20%;
+        margin-left: 100px;
+    }
+
+    .flower img {
         animation: flower 10s infinite linear;
     }
 
@@ -305,6 +340,7 @@ body {
     .flower img {
         width: 200px;
         height: 200px;
+        /* margin-left: 100px; */
     }
 
     /* con4 */
@@ -319,10 +355,19 @@ body {
         display: flex;
         justify-content: space-around;
         text-align: center;
+        overflow: hidden;
     }
 
     .mission li {
         width: calc(100% / 2);
+    }
+
+    .mission li:first-child {
+        margin-left: -300px;
+    }
+
+    .mission li:last-child {
+        margin-right: -300px;
     }
 
     .con4 h3 {
@@ -418,7 +463,7 @@ body {
         display: flex;
         justify-content: space-around;
         margin: 50px auto;
-        gap: 100px;
+        gap: 50px;
 
     }
 
@@ -433,6 +478,7 @@ body {
 
     .con5 li:first-child {
         width: 40%;
+        margin-top: 500px;
 
     }
 
@@ -444,6 +490,7 @@ body {
 
     .con5 li:last-child {
         width: 50%;
+        margin-top: 500px;
     }
 
     .con5 div {
@@ -498,9 +545,11 @@ body {
         width: 200px;
         height: 200px;
         position: absolute;
-        right: -30px;
+        right: 20px;
         top: 50%;
-        transform: translate(-50%, -50%) rotate(25deg);
+        transform: translateY(-150%) rotate(180deg);
+        opacity: 0;
+        transition: 1s;
     }
 
     .con6 ul li:last-child {
@@ -512,10 +561,11 @@ body {
         width: 200px;
         height: 200px;
         position: absolute;
-        right: -30px;
+        right: 20px;
         top: 50%;
-        transform: translate(-50%, -50%);
-
+        transform: translateY(-150%) rotate(180deg);
+        opacity: 0;
+        transition: 1.4s;
     }
 
 
@@ -749,11 +799,40 @@ body {
     .con2 .best img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    .con2 .best li:nth-child(1) img {
+        transition: 1s;
+    }
+
+    .con2 .best li:nth-child(2) img {
+        transition: 1.8s;
+    }
+
+    .con2 .best li:nth-child(3) img {
+        transition: 2s;
     }
 
     .con2 p {
+        opacity: 0;
         margin-bottom: 20px;
+        transform: translateX(-200px);
+
+    }
+
+
+    .con2 .best li:nth-child(1) p {
+        transition: 1s;
+    }
+
+    .con2 .best li:nth-child(2) p {
+        transition: 1.8s;
+    }
+
+    .con2 .best li:nth-child(3) p {
+        transition: 2s;
     }
 
     /* .con2 .arrow {
@@ -798,7 +877,9 @@ body {
         display: inline-block;
         border: 5px solid var(--main-color1);
         border-radius: 100px;
-
+        transform: translateY(-200px) rotate(180deg);
+        opacity: 0;
+        transition: 1s;
     }
 
     .flower {
@@ -840,6 +921,14 @@ body {
 
     .mission li {
         width: calc(100% / 2);
+    }
+
+    .mission li:first-child {
+        margin-left: -300px;
+    }
+
+    .mission li:last-child {
+        margin-right: -300px;
     }
 
     .con4 h3 {
@@ -950,7 +1039,7 @@ body {
 
     .con5 li:first-child {
         width: 40%;
-
+        margin-top: 500px;
     }
 
     .con5 li:first-child img {
@@ -962,6 +1051,7 @@ body {
     .con5 li:last-child {
         width: 60%;
         height: 100%;
+        margin-top: 500px;
     }
 
 
@@ -1021,9 +1111,11 @@ body {
         width: 30%;
 
         position: absolute;
-        right: -30px;
+        right: 30px;
         top: 50%;
-        transform: translate(-50%, -50%) rotate(25deg);
+        transform: translateY(-150%) rotate(180deg);
+        opacity: 0;
+        transition: 1s;
     }
 
     .con6 ul li:last-child {
@@ -1034,9 +1126,11 @@ body {
     .con6 ul li:last-child img {
         width: 30%;
         position: absolute;
-        right: -40px;
+        right: 30px;
         top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateY(-150%) rotate(180deg);
+        opacity: 0;
+        transition: 1.4s;
 
     }
 
@@ -1326,13 +1420,41 @@ body {
     .con2 .best img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    .con2 .best li:nth-child(1) img {
+        transition: 1s;
+    }
+
+    .con2 .best li:nth-child(2) img {
+        transition: 2s;
+    }
+
+    .con2 .best li:nth-child(3) img {
+        transition: 3s;
     }
 
     .con2 p {
+        opacity: 0;
         margin-bottom: 20px;
+        transform: translateX(-200px);
+
     }
 
+
+    .con2 .best li:nth-child(1) p {
+        transition: 1s;
+    }
+
+    .con2 .best li:nth-child(2) p {
+        transition: 2s;
+    }
+
+    .con2 .best li:nth-child(3) p {
+        transition: 3s;
+    }
 
 
     /* con3 */
@@ -1369,7 +1491,9 @@ body {
         display: inline-block;
         border: 5px solid var(--main-color1);
         border-radius: 100px;
-
+        transform: translateY(-200px) rotate(180deg);
+        opacity: 0;
+        transition: 1s;
     }
 
     .flower {
@@ -1412,6 +1536,9 @@ body {
 
     }
 
+    .misstion li:first-child {
+        margin-left: -300px;
+    }
 
     .con4 h3 {
         margin-bottom: 20px;
@@ -1524,7 +1651,7 @@ body {
 
     .con5 li:first-child {
         width: 40%;
-
+        margin-top: 500px;
     }
 
     .con5 li:first-child img {
@@ -1536,6 +1663,7 @@ body {
     .con5 li:last-child {
         width: 60%;
         height: 100%;
+        margin-top: 500px;
     }
 
 
@@ -1592,9 +1720,11 @@ body {
         width: 30%;
 
         position: absolute;
-        right: -30px;
+        right: 20px;
         top: 50%;
-        transform: translate(-50%, -50%) rotate(25deg);
+        transform: translateY(-150%) rotate(180deg);
+        opacity: 0;
+        transition: 1s;
     }
 
     .con6 ul li:last-child {
@@ -1605,9 +1735,11 @@ body {
     .con6 ul li:last-child img {
         width: 30%;
         position: absolute;
-        right: -40px;
+        right: 20px;
         top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateY(-150%) rotate(180deg);
+        opacity: 0;
+        transition: 1.4s;
 
     }
 
@@ -1898,13 +2030,41 @@ body {
     .con2 .best img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    .con2 .best li:nth-child(1) img {
+        transition: 1s;
+    }
+
+    .con2 .best li:nth-child(2) img {
+        transition: 2s;
+    }
+
+    .con2 .best li:nth-child(3) img {
+        transition: 3s;
     }
 
     .con2 p {
+        opacity: 0;
         margin-bottom: 20px;
+        transform: translateX(-200px);
+
     }
 
+
+    .con2 .best li:nth-child(1) p {
+        transition: 1s;
+    }
+
+    .con2 .best li:nth-child(2) p {
+        transition: 2s;
+    }
+
+    .con2 .best li:nth-child(3) p {
+        transition: 3s;
+    }
 
 
     /* con3 */
@@ -1941,7 +2101,9 @@ body {
         display: inline-block;
         border: 5px solid var(--main-color1);
         border-radius: 100px;
-
+        transform: translateY(-200px) rotate(180deg);
+        opacity: 0;
+        transition: 1s;
     }
 
     .flower {
@@ -1982,6 +2144,10 @@ body {
         /* display: flex; */
         margin: 0px auto;
 
+    }
+
+    .mission li:first-child {
+        margin-left: -300px;
     }
 
 
@@ -2189,9 +2355,11 @@ body {
         width: 30%;
 
         position: absolute;
-        right: -30px;
+        right: 30px;
         top: 50%;
-        transform: translate(-50%, -50%) rotate(25deg);
+        transform: translateY(-150%) rotate(180deg);
+        opacity: 0;
+        transition: 1s;
     }
 
     .con6 ul li:last-child {
@@ -2202,10 +2370,11 @@ body {
     .con6 ul li:last-child img {
         width: 30%;
         position: absolute;
-        right: -40px;
+        right: 30px;
         top: 50%;
-        transform: translate(-50%, -50%);
-
+        transform: translateY(-150%) rotate(180deg);
+        opacity: 0;
+        transition: 1.4s;
     }
 
 

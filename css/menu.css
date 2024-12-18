@@ -17,6 +17,7 @@ a {
 
 body {
     font-family: 'NanumSquareRound';
+    overflow-X: hidden;
 }
 
 :root {
@@ -137,7 +138,13 @@ body {
         opacity: 0;
         display: flex;
         transition: opacity 1s ease;
+
     }
+
+    /* .con1 .s_box1 {
+        transform: translateX(-0%);
+        transition: transform 1s ease;
+    } */
 
 
 
@@ -169,6 +176,8 @@ body {
         width: 60%;
         align-content: center;
         margin: 0px auto;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     .con1 .info {
@@ -182,7 +191,7 @@ body {
 
     .con1 .info>li {
         width: calc(100% / 3 - 20px);
-        height: 100px;
+        height: 140px;
         background-color: #eee;
         align-content: center;
         padding: 20px;
@@ -357,6 +366,11 @@ body {
         opacity: 0;
         transition: opacity 1s ease;
     }
+
+    /* .con2 .w_box1 {
+        right: 50%;
+        transition: right 0.5s ease;
+    } */
 
     .con2 .w_box1>li:first-child,
     .con2 .w_box2>li:first-child,
@@ -581,8 +595,10 @@ body {
         width: 300px;
         position: absolute;
         left: -150px;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 46%;
+        transform: translateY(-50%) rotate(0deg);
+        transition: 1s;
+        /* opacity: 0; */
         /* display: none; */
     }
 
@@ -639,7 +655,7 @@ body {
     .con4 .sandbox2,
     .con4 .sandbox3 {
         width: 100%;
-        height: 100%;
+        height: 80%;
         display: flex;
         justify-content: space-around;
         border: 1px solid #222;
@@ -696,6 +712,12 @@ body {
         margin-bottom: 20px;
     }
 
+    .con4 .yellowbox img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
     .con4 .sand h3 {
         padding-top: 20px;
     }
@@ -705,8 +727,9 @@ body {
     }
 
     .con4 .info2 img {
-        width: 80px;
-        height: 100px;
+        width: 100%;
+        height: 80px;
+        object-fit: contain;
     }
 
     .con4 .grain {
@@ -719,11 +742,12 @@ body {
 
     .con4 .grainbox {
         width: 120px;
-        height: 120px;
+        height: 100%;
         background-color: var(--main-color1);
         text-align: center;
         color: #fff;
         align-content: center;
+        padding: 10px;
 
     }
 
@@ -749,11 +773,12 @@ body {
     .con4 .vegebox {
 
         width: 120px;
-        height: 120px;
+        height: 100%;
         background-color: var(--main-color1);
         text-align: center;
         color: #fff;
         align-content: center;
+        padding: 10px;
     }
 
     .con4 .vegebox img {
@@ -903,8 +928,13 @@ body {
         opacity: 0;
         display: flex;
         transition: opacity 1s ease;
+
     }
 
+    /* .con1 .s_box1 {
+        transform: translateX(-0%);
+        transition: transform 1s ease;
+    } */
 
 
     .con1 .s_box1>li:first-child,
@@ -936,6 +966,8 @@ body {
         width: 60%;
         align-content: center;
         margin: 0px auto;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     .con1 .info {
@@ -949,7 +981,7 @@ body {
 
     .con1 .info>li {
         width: calc(100% / 3 - 20px);
-        height: 100px;
+        height: 150px;
         background-color: #eee;
         align-content: center;
         padding: 20px;
@@ -1125,6 +1157,12 @@ body {
         opacity: 0;
         transition: opacity 1s ease;
     }
+
+    /* 
+    .con2 .w_box1 {
+        right: 50%;
+        transition: right 0.5s ease;
+    } */
 
     .con2 .w_box1>li:first-child,
     .con2 .w_box2>li:first-child,
@@ -1348,7 +1386,7 @@ body {
     .probox img {
         width: 200px;
         position: absolute;
-        left: -100px;
+        left: -110px;
         top: 20px;
         /* display: none; */
     }
@@ -1407,7 +1445,7 @@ body {
     .con4 .sandbox2,
     .con4 .sandbox3 {
         width: 100%;
-        height: 100%;
+        height: 80%;
         display: flex;
         justify-content: space-around;
         border: 1px solid #222;
@@ -1466,7 +1504,7 @@ body {
 
     .con4 .yellowbox img {
         width: 100%;
-        margin-top: 40px;
+        margin-top: 0px;
     }
 
     .con4 .sand h3 {
@@ -1479,7 +1517,7 @@ body {
 
     .con4 .info2 img {
         width: 100%;
-        height: 100px;
+        height: 60px;
         object-fit: contain;
     }
 
@@ -1493,7 +1531,8 @@ body {
 
     .con4 .grainbox {
         width: 120px;
-        height: 120px;
+        height: 100%;
+        padding: 10px 0px;
         background-color: var(--main-color1);
         text-align: center;
         color: #fff;
@@ -1528,7 +1567,8 @@ body {
     .con4 .vegebox {
 
         width: 120px;
-        height: 120px;
+        height: 100%;
+        padding: 10px 0px;
         background-color: var(--main-color1);
         text-align: center;
         color: #fff;
@@ -1711,7 +1751,7 @@ body {
     /* salady 큰박스  */
     .con1 .salady {
         width: 90%;
-        height: 800px;
+        height: 900px;
         margin: 0px auto;
         position: relative;
 
@@ -1783,7 +1823,7 @@ body {
 
     .con1 .info>li {
         width: calc(100% / 3 - 20px);
-        height: 100px;
+        height: 150px;
         background-color: #eee;
         align-content: center;
         padding: 20px;
@@ -2186,7 +2226,6 @@ body {
     .probox {
         width: 90%;
         margin: 20px auto;
-        /* display: flex; */
         text-align: center;
         gap: 20px;
         justify-content: space-around;
@@ -2208,6 +2247,8 @@ body {
 
     .probox img {
         width: 300px;
+        /* transform: translateY(-1000px); */
+        /* margin-top: 100px; */
         /* position: absolute;
         left: 0px;
         top: 20px; */
@@ -2362,7 +2403,8 @@ body {
 
     .con4 .grainbox {
         width: 120px;
-        height: 100px;
+        height: 100%;
+        padding: 10px;
         background-color: var(--main-color1);
         text-align: center;
         color: #fff;
@@ -2397,7 +2439,8 @@ body {
     .con4 .vegebox {
 
         width: 120px;
-        height: 100px;
+        height: 100%;
+        padding: 10px;
         background-color: var(--main-color1);
         text-align: center;
         color: #fff;
@@ -2601,17 +2644,11 @@ body {
         border: 1px solid #222;
         margin: 30px auto;
         border-radius: 50px;
-        /* gap: 50px; */
-        /* position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0;
-        display: flex;
-        transition: opacity 1s ease;
-
-        padding-bottom: 20px; */
     }
 
+    /* .con1 .s_box1 {
+    
+    } */
 
 
     .con1 .s_box1>li:first-child,

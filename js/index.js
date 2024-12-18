@@ -108,44 +108,6 @@ $(".navi li").on("click",function(){
 
 
 
-// con2
-
-// let tot = $(".best li").length;
-// let j = 0; // 현재 슬라이드 인덱스
-
-// // 오른쪽으로 슬라이드 (다음 이미지로 이동)
-// $(".arrow_r").on("click", function(){
-//     // 애니메이션을 사용하여 오른쪽으로 한 칸 슬라이드
-//     $(".best").stop().animate({"margin-left": "-474px"}, function() {
-//         // 첫 번째 항목을 마지막으로 이동
-//         $(".best li:first-child").appendTo(".best");
-//         // margin-left를 0으로 설정하여 위치 초기화
-//         $(".best").css("margin-left", "0");
-//     });
-//     // 인덱스 증가
-//     j++;
-//     if(j == tot) {
-//         j = 0;
-//     }
-// });
-
-// // 왼쪽으로 슬라이드 (이전 이미지로 이동)
-// $(".arrow_l").on("click", function(){
-//     // 애니메이션을 사용하여 왼쪽으로 한 칸 슬라이드
-//     $(".best").stop().animate({"margin-left": "474px"}, function() {
-//         // 마지막 항목을 첫 번째로 이동
-//         $(".best li:last-child").prependTo(".best");
-//         // margin-left를 0으로 설정하여 위치 초기화
-//         $(".best").css("margin-left", "0");
-//     });
-//     // 인덱스 감소
-//     j--;
-//     if(j < 0) {
-//         j = tot - 1;
-//     }
-// });
-
-
 // con4
 
 $(".more .box1").on("mouseenter",function(){
@@ -159,6 +121,48 @@ $(".more .box1").on("mouseleave",function(){
     $(".more .box2").stop().animate({"width":"0px"},1500);
     $(".more .box1 a").css({"color":"#222"});
     
+});
+
+
+// scroll
+
+let baseline = -600;
+let con1 =$(".con1").offset().top + baseline;
+let con2 =$(".con2").offset().top + baseline;
+let con3 =$(".con3").offset().top + baseline;
+let con4 =$(".con4").offset().top + baseline;
+let con5 =$(".con5").offset().top + baseline;
+let con6 =$(".con6").offset().top + baseline;
+let footer = $("footer").offset().top +baseline;
+
+
+$(window).on("scroll",function(){
+
+    let scroll= $(this).scrollTop();
+
+    if(scroll >= con2 && scroll < con3){
+        $(" .con2 .best img").css({"transform":"translateX(0px)" , "opacity":"1"});
+        $(" .con2 .best p").css({"transform":"translateX(0px)" , "opacity":"1"});
+    }else if(scroll >= con3 && scroll < con4){
+        $(".con3 .lose").css({"transform":"translateY(0px)  rotate(0deg)" , "opacity":"1"});
+        
+    }else if(scroll >= con4 && scroll < con5){
+        $(".con4 .mission li:first-child").stop().animate({"margin-left":"0px"},1000);
+        $(".con4 .mission li:last-child").stop().animate({"margin-right":"0px"},1000);
+    }else if(scroll >= con5 && scroll < con6){
+        $(".con5 li:first-child").stop().animate({"margin-top":"0px"});
+        $(".con5 li:last-child").stop().animate({"margin-top":"0px"});
+    }else if(scroll >= con6 && scroll < footer){
+        $(".con6 ul li:first-child img").css({"opacity":"1" , "transform":"translateY(-50%) rotate(25deg)"});
+        $(".con6 ul li:last-child img").css({"opacity":"1" , "transform":"translateY(-50%) rotate(0deg)"});
+    }
+
+
+
+
+
+
+
 });
 
 
