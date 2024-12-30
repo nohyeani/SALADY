@@ -125,11 +125,16 @@ header .bars {
 
 .con1 ul li {
     width: 50%;
+    opacity:0;
+    transition: 1s;
 }
-
+.con1 ul li:first-child{
+    margin-left:-500px;
+}
 .con1 ul li:last-child {
     padding: 50px 30px;
     box-sizing: border-box;
+    /* margin-right:-500px; */
 }
 
 .con1 ul img {
@@ -172,6 +177,12 @@ header .bars {
 
 .con2 .banner h3 {
     margin: 40px 0px;
+}
+.con2 .banner img{
+    opacity:0;
+    margin-left:-100%;
+    transform: rotate(180deg);
+    transition:1s;
 }
 
 .con2 .kitchen {
@@ -505,8 +516,12 @@ header .bars {
 
 .con1 ul li {
     width: 50%;
+    opacity:0;
+    transition:1s;
 }
-
+.con1 ul li:first-child{
+    margin-left:-500px;
+}
 .con1 ul li:last-child {
     padding: 0px 30px;
     box-sizing: border-box;
@@ -553,7 +568,12 @@ header .bars {
 .con2 .banner h3 {
     margin: 40px 0px;
 }
-
+.con2 .banner img{
+    opacity:0;
+    margin-left:-100%;
+    transform: rotate(180deg);
+    transition:1s;
+}
 .con2 .kitchen {
     width: 70%;
     height: 100%;
@@ -989,7 +1009,14 @@ footer li a {
         .con2 .banner h3 {
             margin: 40px 0px;
         }
-        
+
+        .con2 .banner img{
+            opacity:0;
+            margin-left:-100%;
+            transform: rotate(180deg);
+            transition:1s;}
+
+
         .con2 .kitchen {
             width: 70%;
             height: 100%;
@@ -1433,6 +1460,13 @@ footer li a {
             font-size:18px;
              margin: 40px 10px;
          }
+
+         .con2 .banner img{
+            opacity:0;
+            margin-left:-100%;
+            transform: rotate(180deg);
+            transition:1s;}
+
          .con2 .banner img{
             width:30%;
             height:100%;

@@ -20,7 +20,10 @@ $(".close").on("click",function(){
 
 
 
-
+$(".con2 .down").on("click",function(){
+    let i = $(".con2 .down").index(this);
+    $(".con2 li:last-child").eq(i).slideToggle();
+});
 
 
 

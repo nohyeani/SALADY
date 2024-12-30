@@ -167,7 +167,8 @@ body {
     .con1 .s_box1>li:first-child img,
     .con1 .s_box2>li:first-child img,
     .con1 .s_box3>li:first-child img {
-        width: 80%;
+        width: 300px;
+        margin-top:50px;
     }
 
     .con1 .s_box1>li:last-child,
